@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
+import javax.swing.JTable;
 
 /**
  *
@@ -30,7 +31,7 @@ public class Main extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTableParticipants = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -52,7 +53,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTableParticipants.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -63,7 +64,7 @@ public class Main extends javax.swing.JFrame {
                 "Placa", "Categoria", "Distancia", "Tiempo", "En carrera"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTableParticipants);
 
         jButton3.setText("Iniciar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -159,6 +160,10 @@ public class Main extends javax.swing.JFrame {
             }
         });
     }
+    
+    public JTable getjTableParticipants () {
+        return jTableParticipants;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -166,6 +171,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTableParticipants;
     // End of variables declaration//GEN-END:variables
 }

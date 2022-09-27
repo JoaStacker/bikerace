@@ -20,6 +20,19 @@ public class MainController {
     }
     
     public static void cargarParticipantes(){
+        DefaultTableModel data = (DefaultTableModel) viewMain.getjTableParticipants().getModel();
+        data.setNumRows(0);
+        for (Participant w : db.getParticipants() ) {
+            Object[] row = new Object[6];
+            row[0] = w.getId();
+            row[1] = w.getCoinName();
+            row[2] = w.getSymbol();
+            row[3] = w.getBalance();
+            row[4] = w.getValue_usd();
+            row[5] = w.getTotal_usd();
+            data.addRow(row);
+        }
+        getTotal();
     }
     
     public static void createSetForCreate(){
