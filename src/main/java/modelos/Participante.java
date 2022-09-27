@@ -1,16 +1,16 @@
 package modelos;
 import java.time.LocalTime;
 
-public class participantes {
+public class Participante {
     private int placa;
     private int categoria;
     private int distancia;
     private LocalTime tiempo;
 
-    public participantes() {
+    public Participante() {
     }
 
-    public participantes(int placa, int categoria, int distancia, LocalTime tiempo) {
+    public Participante(int placa, int categoria, int distancia, LocalTime tiempo) {
         this.placa = placa;
         this.categoria = categoria;
         this.distancia = distancia;
@@ -51,7 +51,7 @@ public class participantes {
 
     @Override
     public String toString() {
-        return "participantes{" + "placa=" + placa + ", categoria=" + categoria + ", distancia=" + distancia + ", tiempo=" + tiempo + '}';
+        return "Participante{" + "placa=" + placa + ", categoria=" + categoria + ", distancia=" + distancia + ", tiempo=" + tiempo + '}';
     }
 
     

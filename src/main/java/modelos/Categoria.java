@@ -1,6 +1,6 @@
 package modelos;
 
-public class categorias {
+public class Categoria {
     private int id;
     private String nombre;
     private int edad_min;
@@ -8,10 +8,10 @@ public class categorias {
     private int anio_nacimiento;
     private int distancia;
 
-    public categorias() {
+    public Categoria() {
     }
 
-    public categorias(int id, String nombre, int edad_min, int edad_max, int anio_nacimiento, int distancia) {
+    public Categoria(int id, String nombre, int edad_min, int edad_max, int anio_nacimiento, int distancia) {
         this.id = id;
         this.nombre = nombre;
         this.edad_min = edad_min;
@@ -70,7 +70,7 @@ public class categorias {
 
     @Override
     public String toString() {
-        return "categorias{" + "id=" + id + ", nombre=" + nombre + ", edad_min=" + edad_min + ", edad_max=" + edad_max + ", anio_nacimiento=" + anio_nacimiento + ", distancia=" + distancia + '}';
+        return "Categoria{" + "id=" + id + ", nombre=" + nombre + ", edad_min=" + edad_min + ", edad_max=" + edad_max + ", anio_nacimiento=" + anio_nacimiento + ", distancia=" + distancia + '}';
     }
 
     
