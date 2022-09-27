@@ -5,6 +5,8 @@
 
 package com.mycompany.bikerace;
 
+import controladores.MainController;
+
 /**
  *
  * @author joaquin
@@ -12,6 +14,6 @@ package com.mycompany.bikerace;
 public class Bikerace {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        MainController.showView();
     }
 }
